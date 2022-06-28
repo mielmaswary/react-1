@@ -1,13 +1,120 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100&display=swap");
+* {
+  font-family: "Inter";
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.header {
+  width: 100%;
+  height: 55px;
+  background: #f55a5a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-logo {
+  background-image: url("./earth-icon.png");
+  width: 15px;
+  height: 20px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-title {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+  color: #ffffff;
+}
+.header > * {
+  margin: 3px;
+}
+.container {
+  width: 95%;
+  margin: auto;
+  background-color: FFFFFF;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 125px;
+  height: 160px;
+  border-radius: 5px;
+  margin-right: 19px;
+}
+.main-info {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.locaiton {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.locaition-icon {
+  background-image: url("./locaition-icon.png");
+  width: 15px;
+  height: 20px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  color: #2b283a;
+}
+a {
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  /* identical to box height */
+
+  text-decoration-line: underline;
+
+  color: #918e9b;
+  margin-left: 12px;
+}
+div.h2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+
+  color: #2b283a;
+}
+.date {
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+
+  color: #2b283a;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 7px;
+}
+.date > * {
+  margin-right: 2px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  /* or 15px */
+
+  color: #2b283a;
+  max-width: 326px;
 }
